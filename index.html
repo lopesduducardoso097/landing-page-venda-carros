@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoPrime | Venda de Carros</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Auto<span>Prime</span></h2>
+
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#veiculos">Veículos</a></li>
+                <li><a href="#sobre">Sobre nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+
+            <button id="theme-toggle" aria-label="Alternar tema">🌙</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <span class="tag">SEU PRÓXIMO CARRO ESTÁ AQUI</span>
+
+                <h1>Qualidade, confiança e o melhor negócio!</h1>
+
+                <p>
+                    Na AutoPrime você encontra os melhores carros,
+                    com procedência garantida, as melhores condições
+                    de pagamento e atendimento especializado.
+                </p>
+
+                <a href="#veiculos" class="btn">Ver nossos veículos →</a>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&q=85"
+                    alt="Carro esportivo"
+                >
+            </div>
+        </section>
+
+        <section class="benefits" id="sobre">
+            <div class="benefit">
+                <span>🛡️</span>
+                <div>
+                    <h3>Veículos revisados</h3>
+                    <p>Mais segurança para você</p>
+                </div>
+            </div>
+
+            <div class="benefit">
+                <span>💳</span>
+                <div>
+                    <h3>Melhores taxas</h3>
+                    <p>Condições especiais de financiamento</p>
+                </div>
+            </div>
+
+            <div class="benefit">
+                <span>🎧</span>
+                <div>
+                    <h3>Atendimento especializado</h3>
+                    <p>Do seu jeito, sempre</p>
+                </div>
+            </div>
+
+            <div class="benefit">
+                <span>✔️</span>
+                <div>
+                    <h3>Garantia de procedência</h3>
+                    <p>Aqui você pode confiar</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cars" id="veiculos">
+            <div class="section-header">
+                <h2>Carros em destaque</h2>
+                <a href="#contato">Ver todos os veículos →</a>
+            </div>
+
+            <div class="car-grid">
+
+                <article class="car-card">
+                    <img src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?auto=format&fit=crop&w=800&q=80" alt="Toyota Corolla">
+                    <div class="car-info">
+                        <span class="badge">Mais vendido</span>
+                        <h3>Toyota Corolla</h3>
+                        <p>2024 • Automático • Flex</p>
+                        <h2>R$ 145.900</h2>
+                        <button class="buy-btn" onclick="comprar('Toyota Corolla')">Tenho interesse</button>
+                    </div>
+                </article>
+
+                <article class="car-card">
+                    <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=800&q=80" alt="SUV moderno">
+                    <div class="car-info">
+                        <span class="badge">Oferta</span>
+                        <h3>SUV Premium</h3>
+                        <p>2023 • Automático • Flex</p>
+                        <h2>R$ 129.900</h2>
+                        <button class="buy-btn" onclick="comprar('SUV Premium')">Tenho interesse</button>
+                    </div>
+                </article>
+
+                <article class="car-card">
+                    <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=800&q=80" alt="Carro esportivo">
+                    <div class="car-info">
+                        <h3>Esportivo GT</h3>
+                        <p>2024 • Automático • Gasolina</p>
+                        <h2>R$ 189.900</h2>
+                        <button class="buy-btn" onclick="comprar('Esportivo GT')">Tenho interesse</button>
+                    </div>
+                </article>
+
+                <article class="car-card">
+                    <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=80" alt="Sedan moderno">
+                    <div class="car-info">
+                        <h3>Sedan Executivo</h3>
+                        <p>2023 • Automático • Flex</p>
+                        <h2>R$ 115.900</h2>
+                        <button class="buy-btn" onclick="comprar('Sedan Executivo')">Tenho interesse</button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="contact" id="contato">
+            <h2>Encontre seu próximo carro!</h2>
+            <p>Entre em contato com nossa equipe e faça seu negócio.</p>
+            <a href="https://wa.me/5500000000000" class="btn">Falar com um vendedor</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 AutoPrime — Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
