@@ -1,0 +1,370 @@
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --background: #ffffff;
+    --surface: #f4f5f7;
+    --text: #17202d;
+    --secondary: #657080;
+    --primary: #e50925;
+    --border: #e0e3e8;
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+    transition: background 0.4s, color 0.4s;
+}
+
+/* DARK MODE */
+
+body.dark {
+    --background: #10141b;
+    --surface: #1c232e;
+    --text: #f5f5f5;
+    --secondary: #b0bac8;
+    --border: #303b49;
+}
+
+/* NAVBAR */
+
+header {
+    background: var(--background);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.logo span {
+    color: var(--primary);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+#theme-toggle {
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    border-radius: 30px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 19px;
+}
+
+/* HERO */
+
+.hero {
+    max-width: 1200px;
+    margin: auto;
+    min-height: 430px;
+    padding: 65px 25px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.tag {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--secondary);
+}
+
+.hero h1 {
+    font-size: clamp(32px, 4vw, 53px);
+    line-height: 1.15;
+    margin: 12px 0;
+    font-weight: 800;
+}
+
+.hero p {
+    color: var(--secondary);
+    line-height: 1.8;
+    margin-bottom: 25px;
+    max-width: 520px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 25px;
+    background: var(--primary);
+    color: white;
+    border-radius: 9px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    background: #bd001b;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* BENEFÍCIOS */
+
+.benefits {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    border-bottom: 1px solid var(--border);
+}
+
+.benefit {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-right: 1px solid var(--border);
+    padding: 10px;
+}
+
+.benefit span {
+    font-size: 27px;
+}
+
+.benefit h3 {
+    font-size: 13px;
+}
+
+.benefit p {
+    font-size: 11px;
+    color: var(--secondary);
+}
+
+/* VITRINE */
+
+.cars {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 25px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.section-header h2 {
+    font-size: 28px;
+}
+
+.section-header a {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.car-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.car-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 30px #00000015;
+}
+
+.car-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.car-info {
+    padding: 18px;
+}
+
+.badge {
+    background: var(--primary);
+    color: white;
+    font-size: 10px;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.car-info h3 {
+    margin: 12px 0 5px;
+    font-size: 17px;
+}
+
+.car-info p {
+    color: var(--secondary);
+    font-size: 12px;
+}
+
+.car-info h2 {
+    margin: 15px 0;
+    font-size: 21px;
+}
+
+.buy-btn {
+    width: 100%;
+    border: none;
+    padding: 12px;
+    background: var(--primary);
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    background: #bd001b;
+}
+
+/* CONTATO */
+
+.contact {
+    background: var(--surface);
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.contact h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    color: var(--secondary);
+    margin-bottom: 25px;
+}
+
+/* RODAPÉ */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: var(--secondary);
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+    .car-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .benefits {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .benefits {
+        grid-template-columns: 1fr;
+    }
+
+    .benefit {
+        border-right: none;
+    }
+
+    .car-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-header h2 {
+        font-size: 21px;
+    }
+
+    .contact h2 {
+        font-size: 24px;
+    }
+}
